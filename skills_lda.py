@@ -14,7 +14,7 @@ from pymongo import MongoClient
 
 
 #Transform data output from NER model
-skills_df_raw = pd.read_csv('skills_df2.csv').drop('Unnamed: 0', axis=1)
+skills_df_raw = pd.read_csv('https://raw.githubusercontent.com/pgoodridge/Capstone/master/skills_df2.csv').drop('Unnamed: 0', axis=1)
 skills_df = skills_df_raw.copy()
 skills_df['skill'] = skills_df_raw['skill'].map(lambda x: x.replace(' ', ''))
 
