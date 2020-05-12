@@ -1,0 +1,48 @@
+evaluation run 1
+	dropout: 0.0
+	embeddings: Bert
+	hidden_size: 384
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 1
+	use_crf: True
+score: 0.14506666666666668
+variance: 3.3555555555558526e-07
+test_score: 0.8711
+
+
+evaluation run 2
+	dropout: 0.0
+	embeddings: PooledFlair
+	hidden_size: 384
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 1
+	use_crf: True
+score: 0.10333333333333335
+variance: 4.6222222222218953e-07
+test_score: 0.9084
+----------------------------------------------------------------------------------------------------
+evaluation run 3
+	dropout: 0.0
+	embeddings: Flair
+	hidden_size: 384
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 1
+	use_crf: True
+score: 0.11056666666666666
+variance: 2.0308888888889055e-05
+test_score: 0.9098
+----------------------------------------------------------------------------------------------------
+evaluation run 4
+	dropout: 0.0
+	embeddings: ELMo
+	hidden_size: 384
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 1
+	use_crf: True
+score: 0.09935655327269766
+variance: 1.4057105498631225e-06
+test_score: 0.9062980030721967

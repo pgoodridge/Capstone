@@ -1,0 +1,216 @@
+evaluation run 1
+	dropout: 0.2
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 256
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 1
+	use_crf: True
+score: 0.12560000000000002
+variance: 2.6666666666675597e-08
+test_score: 0.8852
+----------------------------------------------------------------------------------------------------
+evaluation run 2
+	dropout: 0.2
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 256
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 2
+	use_crf: True
+score: 0.11836666666666666
+variance: 1.7222222222222004e-06
+test_score: 0.8885
+----------------------------------------------------------------------------------------------------
+evaluation run 3
+	dropout: 0.5
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 256
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 2
+	use_crf: True
+score: 0.1504
+variance: 3.386666666666691e-06
+test_score: 0.8634
+----------------------------------------------------------------------------------------------------
+evaluation run 4
+	dropout: 0.2
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 256
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 2
+	use_crf: True
+score: 0.11896666666666667
+variance: 3.2888888888892007e-07
+test_score: 0.8974
+----------------------------------------------------------------------------------------------------
+evaluation run 5
+	dropout: 0.2
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 384
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 2
+	use_crf: True
+score: 0.1139
+variance: 6.866666666666634e-07
+test_score: 0.8943
+----------------------------------------------------------------------------------------------------
+evaluation run 6
+	dropout: 0.5
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 128
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 2
+	use_crf: True
+score: 0.16773333333333332
+variance: 4.822222222221876e-07
+test_score: 0.8474
+----------------------------------------------------------------------------------------------------
+evaluation run 7
+	dropout: 0.5
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 256
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 1
+	use_crf: True
+score: 0.1926
+variance: 6.866666666666634e-07
+test_score: 0.8235
+----------------------------------------------------------------------------------------------------
+evaluation run 8
+	dropout: 0.2
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 384
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 2
+	use_crf: True
+score: 0.12440000000000002
+variance: 2.599999999999945e-07
+test_score: 0.8833
+----------------------------------------------------------------------------------------------------
+evaluation run 9
+	dropout: 0.2
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 128
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 1
+	use_crf: True
+score: 0.14226666666666668
+variance: 6.0022222222222575e-06
+test_score: 0.8771
+----------------------------------------------------------------------------------------------------
+evaluation run 10
+	dropout: 0.5
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 384
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 1
+	use_crf: True
+score: 0.1805
+variance: 5.600000000000099e-07
+test_score: 0.8443
+----------------------------------------------------------------------------------------------------
+evaluation run 11
+	dropout: 0.5
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 128
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 2
+	use_crf: True
+score: 0.16483333333333336
+variance: 4.955555555555154e-07
+test_score: 0.8479
+----------------------------------------------------------------------------------------------------
+evaluation run 12
+	dropout: 0.5
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 384
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 1
+	use_crf: True
+score: 0.18066666666666667
+variance: 1.2155555555555866e-06
+test_score: 0.8365
+----------------------------------------------------------------------------------------------------
+evaluation run 13
+	dropout: 0.0
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 384
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 1
+	use_crf: True
+score: 0.11063333333333336
+variance: 2.4955555555555017e-06
+test_score: 0.9025
+----------------------------------------------------------------------------------------------------
+evaluation run 14
+	dropout: 0.2
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 256
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 2
+	use_crf: True
+score: 0.11766666666666666
+variance: 1.135555555555599e-06
+test_score: 0.8924
+----------------------------------------------------------------------------------------------------
+evaluation run 15
+	dropout: 0.2
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 384
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 1
+	use_crf: True
+score: 0.12016666666666669
+variance: 3.1488888888890047e-06
+test_score: 0.8873
+----------------------------------------------------------------------------------------------------
+evaluation run 16
+	dropout: 0.5
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 128
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 2
+	use_crf: True
+score: 0.16506666666666667
+variance: 9.75555555555612e-07
+test_score: 0.845
+----------------------------------------------------------------------------------------------------
+evaluation run 17
+	dropout: 0.5
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 128
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 1
+	use_crf: True
+score: 0.21956666666666666
+variance: 2.955555555555472e-07
+test_score: 0.7931
+----------------------------------------------------------------------------------------------------
+evaluation run 18
+	dropout: 0.5
+	embeddings: StackedEmbeddings [0-/home/pgoodridge2007/.flair/embeddings/glove.gensim,1-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-forward-v0.2rc.pt,2-/home/pgoodridge2007/.flair/embeddings/lm-mix-english-backward-v0.2rc.pt]
+	hidden_size: 128
+	learning_rate: 0.1
+	mini_batch_size: 16
+	rnn_layers: 2
+	use_crf: True
+score: 0.17099999999999996
+variance: 1.5200000000000056e-06
+test_score: 0.8482
+----------------------------------------------------------------------------------------------------
