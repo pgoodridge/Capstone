@@ -18,7 +18,7 @@ from selenium.webdriver.common.by import By
 import hashlib
 
 def save_job_info(dice_id, job_info):
-    fname = 'C:\\Indeed Files\\' + dice_id + '.json'
+    fname = 'C:\\Indeed Files perm\\' + dice_id + '.json'
     with open(fname, 'w') as f:
         json.dump(job_info, f)
         
@@ -36,35 +36,35 @@ def length_check(element):
         return ''
 
 def get_job_info(driver):
-
-    time.sleep(2)
-    
-    job_desc = driver.find_elements_by_id('vjs-tab-job')
-    job_title = driver.find_elements_by_id('vjs-jobtitle')
-    company = driver.find_elements_by_id('vjs-cn')
-    location = driver.find_elements_by_id('vjs-loc')
-    
-    unique_name = length_check(job_title)+length_check(company)
-    print(unique_name)
-    if len(unique_name) > 1:#only save if we have a valid title and employer
-        job_id  = hashlib.md5(unique_name.encode('utf-8')).hexdigest()
-            
-        job_info = { 
-            'job_desc' : length_check(job_desc),
-            'company': length_check(company),
-            'location': length_check(location),
-            'job_title' : length_check(job_title),
-            'job_id': job_id
-        }
-        save_job_info(job_id, job_info)
+    try:
         
-        return
-    """
-    except TimeoutException:
-        print('Page timeout')
+        time.sleep(random.randint(1,2))
+        
+        job_desc = driver.find_elements_by_id('vjs-tab-job')
+        job_title = driver.find_elements_by_id('vjs-jobtitle')
+        company = driver.find_elements_by_id('vjs-cn')
+        location = driver.find_elements_by_id('vjs-loc')
+        
+        unique_name = length_check(job_title)+length_check(company)+length_check(location)
+        print(unique_name)
+        if len(unique_name) > 1:#only save if we have a valid title and employer
+            job_id  = hashlib.md5(unique_name.encode('utf-8')).hexdigest()
+                
+            job_info = { 
+                'job_desc' : length_check(job_desc),
+                'company': length_check(company),
+                'location': length_check(location),
+                'job_title' : length_check(job_title),
+                'job_id': job_id
+            }
+            save_job_info(job_id, job_info)
+        
+        
         
     except:
-        print('other problem')"""
+        print('other problem')
+    
+    return
         
 
 def initialize_driver():
@@ -86,22 +86,24 @@ def restart_driver(driver, page_abs):
     driver = initialize_driver()
     
     if page_abs >= 2:
-        driver.get('https://www.indeed.com/jobs?q=software+developer&jt=contract&start={}'.format(plabel))
+        driver.get('https://www.indeed.com/jobs?q=software+developer&fromage=7&start={}'.format(plabel))
         
     else:
-        driver.get('https://www.indeed.com/jobs?q=software+developer&jt=contract')
+        driver.get('https://www.indeed.com/jobs?q=software+developer&fromage=7')
     
     return driver
 
-starting_point = 0
+starting_point = 43
 
 for p_num in range(1, 450):
     
     page_abs = starting_point + p_num
+    job_num = page_abs*10
     
     if p_num == 1:
         driver = initialize_driver()
-        driver.get('https://www.indeed.com/jobs?q=software+developer&jt=contract')
+        driver.get('https://www.indeed.com/jobs?q=software+developer&fromage=7&start={}'.format(job_num))
+        
        
     if p_num % 5 == 0:
         #to free up memeory
@@ -117,13 +119,17 @@ for p_num in range(1, 450):
     link_ids = list(range(len(links)))
     print(len(links))
     for i in range(len(link_ids)):
+        
         random.shuffle(link_ids)
-        link_id = link_ids.pop()
+        if len(link_ids) > 0:
+            link_id = link_ids.pop()
+        else:
+            break
         
         try:
             links[link_id].click()
             
-        except ElementClickInterceptedException:
+        except:
             
             driver.refresh()
             print('page reload')
@@ -137,14 +143,15 @@ for p_num in range(1, 450):
             links[link_id].click()
             
         get_job_info(driver)
-        time.sleep(random.randint(1,3))
+        time.sleep(random.uniform(0,1))
         
     try:
         driver.find_element_by_xpath('//span[@class="np"]').click()
         print("Starting Page{}".format(p_num))
         
-    except ElementClickInterceptedException:
+    except:
         #ads are a bitch
+        #restart_driver(driver, p_num+starting_point)
         driver.refresh()
         print('page reload')
         driver.find_element_by_xpath('//span[@class="np"]').click()
